@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+html, body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+hr {
+  margin: 25px auto;
+  width: 20%;
+  min-width: 150px;
+  text-align: center;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#description {
+  font-weight: 600;
+}
+
+form {
+  width: 90%;
+  max-width: 900px;
+  margin: 15px auto 40px;
+  padding: 0;
+  font-size: 14px;
+}
+
+.basic-info {
+  width: 35%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.basic-info-input {
+  margin: 0 auto 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 3px;
+}
+
+.input-field {
+  width: 240px;
+  padding-left: 2px;
+}
+
+.radio {
+  margin: 10px auto 10px;
+  width: 35%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  font-weight: 600;
+}
+
+#gender {
+  border: none;
+}
+
+.gender-description {
+  margin: 10px auto 0;
+}
+
+.gender-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  margin: auto;
+}
+
+.gender-radio {
+  margin-bottom: 3px;
+}
+
+input[name="other"] {
+  padding-left: 2px;
+  display: inline-block;
+  width: 115px;
+}
+
+.question-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+select {
+  margin: 5px auto 5px;
+  width: 30%;
+}
+
+.languages p {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.languages-options {
+  display: grid;
+  margin: 7px auto 17px;
+  width: 45%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.languages-options label {
+  justify-self: left;
+  margin-bottom: 3px;
+}
+
+.comment-description {
+  margin: 0;
+}
+
+#comment {
+  display: block;
+  margin: 10px auto 30px;
+  width: 400px;
+  padding: 5px;
+}
+
+#submit {
+  width: 80px;
+  height: 30px;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  padding: 5px auto;
+  border: none;
+  border-radius: 5px;
+  background-color: #04395E;
+  color: #FFFFFF;
+}
+
+#submit:hover {
+  background-color: #031D44;
+}
+
+@media screen and (max-width: 600px) {
+  
+  html, body {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  #description, .comment-description {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  form {
+    font-size: 12px;
+    width: 95%;
+  }
+  
+  .basic-info {
+    max-width: 90%;
+  }
+  
+  .input-field {
+  width: 100%;
+  }
+  
+  #comment {
+  width: 90%;
+  }
+
+  #gender {
+    width: 100%;
+  }
+
+  input[name="other"] {
+  padding-left: 2px;
+  display: inline-block;
+  width: 80px;
+  }
+
+  select {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .languages-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+}
+
+@media screen and (max-width: 300px) {
+ #comment {
+  width: 95%;
+  }
+}

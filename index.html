@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <h1 id="title">Hello, World!</h1>
+
+<hr>
+
+<p id="description">Campers are a multilingual bunch. Let's find out what languages we speak!</p>
+
+<form id="survey-form" action="" method="GET">
+
+  <div class="basic-info">
+    <div class="basic-info-input">
+      <label id="name-label" for="name" class="label question">Name*: </label>
+      <input class="input-field" type="text" name="name" id="name" placeholder="Eleven" required>
+    </div>
+
+    <div class="basic-info-input">
+      <label id="email-label" for="email" class="label question">Email*: </label>
+      <input class="input-field" type="email" name="email" id="email" placeholder="el@gmail.com" required>
+    </div>
+
+    <div class="basic-info-input">
+      <label id="number-label" for="number" class="label question">Age: </label>
+      <input class="input-field" type="number" id="number" min="1" max="130" placeholder="Age">
+    </div>
+  </div>
+
+  <div class="radio">
+    <fieldset id="gender">
+      <legend class="gender-description question">You identify as:</legend>
+      <div class="gender-options">
+
+        <div class="gender-radio">
+          <label for="male"><input type="radio" name="gender" id="male" value="male" checked>Male</label>
+        </div>
+
+        <div class="gender-radio">
+          <label for="female"><input type="radio" name="gender" id="female" value="female">Female</label>
+        </div>
+
+        <div class="gender-radio">
+          <label for="no-answer"><input type="radio" name="gender" id="no-answer" value="no-answer">Prefer not to say</label>
+        </div>
+
+        <div class="gender-radio">
+          <label for="other"><input type="radio" name="gender" id="other" value="other"><input type="text" name="other" placeholder="Your option"></label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+    
+  <div class="question-dropdown">
+    <label id="dropdown-label" for="dropdown" class="label question">How many languages do you speak?</label>
+    <select id="dropdown">
+      <option disabled selected value="">Select an option</option>
+      <option value="native">1 - Only my native language</option>
+      <option value="bilingual">2 - I'm bilingual</option>
+      <option value="polylingual">3 or more</option>
+    </select>
+  </div>
+
+  <div class="languages">
+    <p class="question">Select the languages that you speak from the list.</p>
+    <div class="languages-options">
+      
+      <label for="English"><input type="checkbox" name="languages" value="English" id="English">English</label>
+      
+      <label for="Spanish"><input type="checkbox" name="languages" value="Spanish" id="Spanish">Spanish</label>
+      
+      <label for="Chinese"><input type="checkbox" name="languages" value="Chinese" id="Chinese">Chinese</label>
+      
+      <label for="French"><input type="checkbox" name="languages" value="French" id="French">French</label>
+      
+      <label for="German"><input type="checkbox" name="languages" value="German" id="German">German</label>
+      
+      <label for="Hindi"><input type="checkbox" name="languages" value="Hindi" id="Hindi">Hindi</label>
+      
+      <label for="Arabic"><input type="checkbox" name="languages" value="Arabic" id="Arabic">Arabic</label>
+      
+      <label for="Portuguese"><input type="checkbox" name="languages" value="Portuguese" id="Portuguese">Portuguese</label>
+      
+      <label for="Russian"><input type="checkbox" name="languages" value="Russian" id="Russian">Russian</label>
+    </div>
+  </div>
+
+  <p class="comment-description question">Was the language you speak not included in the list? Leave a comment!</p>
+  <textarea id="comment" placeholder="Enter your comment here..." rows="3" cols="50"></textarea>
+
+  <button type="submit" id="submit">Submit</button>
+</form>
+</body>
+</html>
